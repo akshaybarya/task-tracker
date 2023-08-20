@@ -59,6 +59,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
 }
 
+.button {
+  all: none;
+
+  background-image: linear-gradient(to bottom right, var(--blue), var(--purple));
+  color: var(--white);
+  padding: 20px 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  border: 0 solid;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -85,5 +99,10 @@ h1, h2, h3, h4, h5, h6 {
   .title-primary-1 > b {
     font-size: large;
     font-style: italic;
+  }
+
+  .button {
+    font-size: larger;
+    padding: 15px 20px;
   }
 }

@@ -26,6 +26,13 @@ const App = () => {
     setSelectedCards(prev => prev + 1);
   };
 
+
+  const resetTracker = () => {
+    setCardData(initialCards);
+    setSelectedCards(0);
+    setCardDataToLS(initialCards);
+  };
+
   const selectedCardCount = (cardData) => {
     let count = 0;
 
@@ -60,7 +67,15 @@ const App = () => {
         <h1 className='title-primary-2'> become my best self</h1>
 
         <h4 className='title-secondary-2'>#TheSuperiorYou #100DaysOfHustleWithAkshayBarya</h4>
+      
+        {
+          selectedCards === 100 ? <button 
+            className='button'
+            onClick={resetTracker}
+          >Reset Tracker</button> : null
+        }
       </div>
+
 
       <div className='card-container'>
         {
