@@ -56,7 +56,7 @@ const App = () => {
       <div className='title-container'>
         <h3 className='title-secondary-1'> 100 Days X-treak Challenge</h3>
 
-        <h2 className='title-primary-1'> I am striving to</h2>
+        <h2 className='title-primary-1'> I am <b>Striving</b> to</h2>
         <h1 className='title-primary-2'> become my best self</h1>
 
         <h4 className='title-secondary-2'>#TheSuperiorYou #100DaysOfHustleWithAkshayBarya</h4>
